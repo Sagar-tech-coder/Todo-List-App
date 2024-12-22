@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 5vw;
+  color: #fff;
+  background-image: linear-gradient(to right, red, yellow);
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.left-part {
+  width: 30%;
+  /* padding-bottom: 13vh; */
+  /* border: 2px solid #fff; */
+}
+
+.field-box {
+  padding-bottom: 30px;
+}
+
+.field-box:last-child {
+  padding-bottom: 0;
+}
+
+label {
+  display: block;
+  font-size: 25px;
+  padding-bottom: 12px;
+}
+
+input {
+  /* height: 20px; */
+  width: 80%;
+  padding: 10px 25px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.addMe-btn {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 25%;
+  padding: 10px 35px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid blueviolet;
+  background-color: blueviolet;
+}
+
+.addMe-btn:hover {
+  color: blueviolet;
+  border-radius: 20px;
+  border: 1px solid blueviolet;
+  background-color: white;
+  transition: all 0.6s ease;
+}
+
+.right-part {
+  width: 80%;
+  /* border: 2px solid #fff; */
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  flex-direction: column;
+}
+
+.right-main {
+  padding: 10px 35px 10px 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #fff;
+}
+
+.box {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#delete_row {
+  background-color: none;
+  cursor: pointer;
+}
+
+#delete_row i {
+  font-size: 25px;
+}
+
+#main-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete_icon i {
+  cursor: pointer;
+  padding: 10px 10px;
+  font-size: 25px;
+}

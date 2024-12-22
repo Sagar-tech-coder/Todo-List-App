@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Remix Icon Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- main container div -->
+    <div id="container">
+      <!-- heading -->
+      <h1>Student Registration System</h1>
+      <!-- main section -->
+      <div class="main">
+        <!-- left part -->
+        <div class="left-part">
+          <!-- name field -->
+          <div class="field-box">
+            <label for="name">Student Name : </label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your full name ..."
+            /><br />
+          </div>
+          <!-- student Id -->
+          <div class="field-box">
+            <label for="student_id">Student Id :</label>
+            <input
+              type="number"
+              id="student_id"
+              placeholder="Enter your ID here ..."
+            />
+          </div>
+          <!-- student class -->
+          <div class="field-box">
+            <label for="student-email">Student Email :</label>
+            <input
+              type="email"
+              id="student-email"
+              required
+              placeholder="Enter your email here ..."
+            />
+          </div>
+          <!-- student roll no -->
+          <div class="field-box">
+            <label for="student_contact">Student Contact No :</label>
+            <input
+              type="number"
+              id="student_contact"
+              placeholder="Enter your Contact No. here ..."
+            />
+          </div>
+          <!-- Add Me Button -->
+          <button class="addMe-btn">Add Me</button>
+        </div>
+        <!-- right part -->
+        <div class="right-part">
+          <div class="right-main">
+            <div class="box" id="name_box">Name</div>
+            <div class="box" id="id_box">Id</div>
+            <div class="box" id="email_box">Email</div>
+            <div class="box" id="contact_box">Contact No.</div>
+          </div>
+          <!-- Here's appering the dynamically divs for displaying in the screen -->
+        </div>
+      </div>
+    </div>
+    <!-- Adding JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
